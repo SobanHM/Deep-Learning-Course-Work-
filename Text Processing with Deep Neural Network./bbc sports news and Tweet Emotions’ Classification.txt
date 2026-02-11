@@ -1,0 +1,30 @@
+Task #1: Tweet Emotions’ Classification
+
+You should use CoLab to complete this task.
+Upload the dataset ‘tweet_emotions.csv’ (available on LMS)  on your Google Drive, read it from within CoLab (10 Marks)
+This dataset contains a ‘Tweet’ column that contains tweets from different users and a ‘Label’ column which indicates the emotion of tweet (joy, surprise, sadness, fear, anger, disgust).
+Use appropriate pandas functions to display number of instances in each of the class labels (10 Marks)
+Prepare data that you can feed to dense neutral network, remember text cannot directly be injected to the network, you need to convert it in 0-1 values. Use tokenizer and other classes to prepare the data. (20 Marks)
+Use 80% of each of the class labels to train a dense network with appropriate input and output layers and two hidden layers with 64 and 32 neuron respectively (10 Marks)
+Test the remaining 20% of the data, report test and training accuracy (10 Marks)
+Inside your notebook, also answer following questions,
+Does accuracy vary from class to class label?
+If so, write the reasons
+Task #2: BBC Sports News Classification
+
+You should use CoLab to complete this task.
+Download BBC Sports Dataset available on LMS
+Upload it on your Google Drive, read it from within CoLab (10 Marks)
+This dataset contains new stories belonging to five classes (athletics, cricket, football, rugby, tennis)
+Prepare data that you can feed to dense neutral network, remember text cannot directly be injected to the network, you need to convert it in 0-1 values. Use tokenizer and other classes to prepare the data. (5 Marks)
+Use 80% of each of the class labels to train a dense network with appropriate input and output layers and two hidden layers with 64 and 32 neuron respectively (5 Marks)
+Test the remaining 20% of the data, report test and training accuracy (5 Marks)
+Inside your note book, also answer following questions, (5 Marks)
+Does accuracy vary from class to class label?
+If so, write the reasons
+Submission instructions: once you are done, please download the ipynb file and submit to this assignment. Please download and upload the file rather sharing the link only.  
+
+The sharing of the notebook must be within due date which is Thursday August 28, 2025 
+Below are datasets to be used:
+bbcsports.csv bbcsports.csv22
+tweet_emotions.csv tweet_emotions.csv
