@@ -1,0 +1,35 @@
+It's a scene classification dataset with six classes. The complete dataset is available here, 
+
+https://www.kaggle.com/datasets/puneet6060/intel-image-classification/
+
+As you could not have completed processing on full dataset, therefore the smaller version has been created for this assignment and made available on above drive link. 
+It contains two folders, one for training the model and other to perform the test. The dataset has following six class labels, 
+
+buildings 
+forest
+glacier 
+mountain
+sea
+street
+ 
+
+The task is to train (on 100 images from train folder) a convolution neural network on train dataset, validate it (on 44 images from training folder) and test it (100 images in test folder).
+The folder on the above link has images in train and test folders. Use appropriate Python /  Keras utilities to prepare train, validate and test datasets. You need to perform following tasks, 
+
+1. Create a CNN model with appropriate conv-pooling to produce 32-64-128-256-512-1024 outputs at respective layers with kernal_size =3 and pool_size=2, followed by flatten and output layers. At the output
+layer, use appropriate activation function keeping in view number of class labels (10 Marks) 
+
+2. Compile the model with appropriate loss and optimizer. The performance metric should be accuracy (10 Marks)
+
+3. Read the dataset (train, test folders from drive) using image_dataset_from_directory utility of Keras. Remember, while reading folders, set label_mode = 'categorical' as this is a multiclass classification task, NOT
+a binary classification as we did in the class (10 Marks) 
+
+4. Train the model on 20 epochs while validating on the validation dataset prepared in the previous step (10 Marks) 
+5. Plot the train and validation accuracies, does the model overfit? If so retrain it on reduced number of epochs based on your elbow location (10 Marks) 
+6. Test the model performance on test dataset (10 Marks) 
+7. Next, using keras.Sequential, create an augmentation layer with randomflip = vertical, randomrotation = 0.3 and randomzoom = 0.3 . Add it at appropriate layer in the above CNN model along with a dropout layer of 0.5. Repeat
+steps 4, 5 and 6 (20 Marks) 
+8. Write your opinion about two models (with and without augmentation) by comparing performance of both. If one performs better than other, write the reason (10 Mark) 
+9. Finally, write code segment that accepts path of an image and predicts class (building, forest, glacier, mountain, sea, street) for it using your trained model (10 Mark) 
+
+Submission instructions: once you are done, please download the ipynb file and submit to this assignment. Please download and upload the file rather sharing the link only.  
